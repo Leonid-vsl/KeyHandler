@@ -14,6 +14,10 @@ public class KeyHandler {
         this.externalSystem = externalSystem;
     }
 
+    /**
+     * Handle only unique keys
+     * @param key
+     */
     public void handleKey(final Key key) {
 
         Consumer<Key> handle = (k) -> externalSystem.accept(key);
